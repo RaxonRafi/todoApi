@@ -9,6 +9,7 @@ router.post("/UserLogin",UserController.UserLogin);
 router.get("/UserProfile",AuthMiddleware,UserController.UserProfile);
 router.post("/UpdateProfile",AuthMiddleware,UserController.UpdateProfile);
 router.post("/CreateTodo",AuthMiddleware,TodoController.CreateTodo);
+router.get("/SelectTodo",TodoController.SelectTodo);
 
 
 module.exports = router;
